@@ -3,6 +3,13 @@ Chef-MongoDB Cookbook Changelog
 Last-Update: Tue Nov  4 11:48:54 PST 2014
 ========================
 
+Version 0.16.4
+--------------------------
+* FIX - Replicaset recipe fails with "undefined method '>' for nil:NilClass" #333
+* FIX - Is there a way to update the admin password? #327
+* FIX - can't create the admin user on a fresh install #326
+* created by merging PR's #344 and #384 from upstream, edelight/chef-mongodb
+
 Pending 0.16.3 Changes
 --------------------------
 * remove old runit dependency
