@@ -3,11 +3,11 @@ include_recipe 'mongodb::mongo_gem'
 users = []
 admin = node['mongodb']['admin']
 
+users.concat(node['mongodb']['users'])
+
 # If authentication is required,
 # add the admin to the users array for adding/updating
 users << admin if (node['mongodb']['config']['auth'] == true) || (node['mongodb']['mongos_create_admin'] == true)
-
-users.concat(node['mongodb']['users'])
 
 # Add each user specified in attributes
 users.each do |user|

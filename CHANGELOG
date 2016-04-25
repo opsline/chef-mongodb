@@ -3,6 +3,11 @@ Chef-MongoDB Cookbook Changelog
 Last-Update: Tue Nov  4 11:48:54 PST 2014
 ========================
 
+Version 0.16.5
+--------------------------
+* create/update admin user account last to fix issue when updating admin password then attempting to create/update other users
+   by authenticating with previous admin password
+
 Version 0.16.4
 --------------------------
 * FIX - Replicaset recipe fails with "undefined method '>' for nil:NilClass" #333
