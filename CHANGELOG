@@ -3,6 +3,12 @@ Chef-MongoDB Cookbook Changelog
 Last-Update: Tue Nov  4 11:48:54 PST 2014
 ========================
 
+Version 0.16.6
+--------------------------
+* support to install 3.X from mongodb_org repos
+* logroate recipe
+* sysctl recipe for mongo 3
+
 Version 0.16.5
 --------------------------
 * create/update admin user account last to fix issue when updating admin password then attempting to create/update other users
