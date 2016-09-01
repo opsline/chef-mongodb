@@ -31,7 +31,7 @@ end
 
 case node['platform_family']
 when 'debian'
-  if if major == '3' && minor == '2'
+  if major == '3' && minor == '2'
     gpgkey = 'EA312927'
   else
     gpgkey = '7F0CEB10'
